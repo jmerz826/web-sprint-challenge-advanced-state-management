@@ -7,7 +7,8 @@ import Header from './components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 
-const App = ()=> {
+const App = () => {
+  console.log('initial commit/setup');
   return (
     <div className="App">
       <Header />
