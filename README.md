@@ -112,8 +112,16 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What problem does the context API help solve?
 
+ANSWER: Context API helps solve the issue of prop drilling. It eliminates the need to explicitly pass props down from component to component to component, which lends itself to typos and errors.
+
 2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+ANSWER: The app's reducer is saved in store and is shared amongst all components. When an action is invoked, it passes a type along to the app's reducer (declared in store), and the reducer modifies the application state according to the type that the action passes in. 
 
 3. What does `redux-thunk` allow us to do? How does it change our `action-creators`?
 
+ANSWER: Thunk allows us to use multiple dispatches in one action.  It is able to do this because it is middleware, and intercepts the action and can perform asynchronous duties inheritly. 
+
 4. What is your favorite state management system you've learned and this sprint? Please explain why!
+
+ANSWER: Definitely Context API. It's the most intuitive, requires the least amount of code, and works fantastically. Prop drilling is very tedious, and makes scaling extremely difficult.
