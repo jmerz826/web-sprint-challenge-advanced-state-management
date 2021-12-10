@@ -13,11 +13,13 @@ import { Provider } from "react-redux";
 const { worker } = require('./mocks/browser');
 worker.start();
 
+// Declare store
 const store = createStore(reducer, applyMiddleware(thunk, logger));
 
 const rootElement = document.getElementById("root");
 
 ReactDOM.render(
+    // App wrapped in Provider, passing in store to make the reducer and middleware (thunk and logger) available to all of App's components
     <Provider store={store}>
         <App />
     </Provider>, 

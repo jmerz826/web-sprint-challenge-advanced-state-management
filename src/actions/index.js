@@ -6,6 +6,7 @@ export const FETCH_FAILURE = 'FETCH_FAILURE';
 export const ADD_SMURF = 'ADD_SMURF';
 export const SET_ERROR = 'SET_ERROR';
 
+// Thunk action. Thunk handles multiple asynchronous dispatches
 export const fetchSmurfs = () => {
     return (dispatch) => {
         dispatch({ type: FETCH_START });

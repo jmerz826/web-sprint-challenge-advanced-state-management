@@ -11,7 +11,6 @@ const AddForm = (props) => {
         description:""
     });
 
-    //remove when error state is added
     const {errorMessage, setError, addSmurf} = props;
 
     const handleChange = e => {
@@ -35,6 +34,7 @@ const AddForm = (props) => {
                 nickname: state.nickname,
                 description: state.description
             });
+            // Reset form inputs to initial values (empty)
             setState({
                 name: "",
                 position: "",
